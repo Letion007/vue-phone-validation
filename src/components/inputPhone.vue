@@ -50,7 +50,6 @@ export default {
       }
       this.isValid = this.validate(this.phone);
       const value = this.isValid ? `${this.selectedCountry.dial_code}${this.phone}` : '';
-      console.log('update2', this.isValid);
       this.pushValidNumber(this.trimNumber(value));
     }
   },
